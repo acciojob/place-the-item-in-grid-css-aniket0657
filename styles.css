@@ -1,2 +1,29 @@
 
 /* Your CSS Code here. */
+/* Grid Container */
+.holder {
+    display: grid;                          /* Enable CSS Grid */
+    grid-template-columns: repeat(2, 1fr);  /* Create 2 equal columns */
+    grid-template-rows: repeat(2, 1fr);     /* Create 2 equal rows */
+    width: 200px;                           /* Total width of the grid */
+    height: 200px;                          /* Total height of the grid */
+    gap: 5px;                               /* Adds spacing between grid items */
+    background-color: #ddd;                 /* Light background */
+    padding: 5px;                           /* Padding around grid */
+}
+
+/* Grid Items */
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Different Background Colors for Visibility */
+.item-1 { background-color: #ff5733; } /* Red */
+.item-2 { background-color: #33b5e5; } /* Blue */
+.item-3 { background-color: #4caf50; } /* Green */
+.item-4 { background-color: #f1c40f; } /* Yellow */
